@@ -185,11 +185,11 @@ where T : IEntity
         switch (choice)
         {
             case 1:
-                break;
                 lecturer.LinkDiscipline(discipline);
-            case 2:
                 break;
+            case 2:
                 lecturer.UnLinkDiscipline(discipline);
+                break;
             default:
                 Console.WriteLine("Такой опции нет");
                 break;
@@ -215,11 +215,11 @@ where T : IEntity
         switch (choice)
         {
             case 1:
-                break;
                 course.LinkDisciplineToCourse(discipline);
-            case 2:
                 break;
+            case 2:
                 course.UnLinkDisciplineToCourse(discipline);
+                break;
             default:
                 Console.WriteLine("Такой опции нет");
                 break;
