@@ -1,4 +1,5 @@
 using System.Data.Common;
+namespace LAB_1;
 
 class Person
 {
