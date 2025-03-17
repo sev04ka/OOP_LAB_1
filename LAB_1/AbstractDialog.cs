@@ -2,6 +2,7 @@ using System.ComponentModel.DataAnnotations;
 using System.Globalization;
 using System.Linq.Expressions;
 using Microsoft.VisualBasic.FileIO;
+namespace LAB_1;
 
 public abstract class AbstractDialog<T> : IDialog
 where T : IEntity
