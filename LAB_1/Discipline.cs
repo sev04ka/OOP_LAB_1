@@ -1,3 +1,5 @@
+namespace LAB_1;
+
 class Discipline : IEntity
 {
     public Guid Id { get; set; } = Guid.NewGuid();
