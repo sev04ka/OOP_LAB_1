@@ -29,4 +29,12 @@ class Discipline : IEntity
         if (!String.IsNullOrEmpty(name)) this.Name = name;
         if (!String.IsNullOrEmpty(description)) this.Description = description;
     }
+
+    ~Discipline()
+    {
+        if (this.Lecturer != null)
+        {
+            Lecturer.disciplines.Remove(this);
+        }
+    }
 }
