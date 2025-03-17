@@ -1,3 +1,5 @@
+namespace LAB_1;
+
 class CourseDialog : AbstractDialog<Course>
 {
     protected override string SearchCriteria(Course item) => $"{item.CourseNumber}";
