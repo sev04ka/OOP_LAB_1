@@ -27,6 +27,7 @@ class Course : IEntity
         if (!courseDisciplines.Contains(discipline))
         {
             courseDisciplines.Add(discipline);
+            discipline.courses.Add(this);
             Console.WriteLine("Дисцпилина успешно прикреплена к курсу");
         }
         else
@@ -40,6 +41,7 @@ class Course : IEntity
         if (courseDisciplines.Contains(discipline))
         {
             courseDisciplines.Remove(discipline);
+            discipline.courses.Remove(this);
             Console.WriteLine("Дисцпилина успешно откреплена от курса");
         }
         else
