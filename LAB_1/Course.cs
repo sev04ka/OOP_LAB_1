@@ -49,4 +49,10 @@ class Course : IEntity
             Console.WriteLine("Данная дисцпилина не прикреплена к курсу");
         }
     }
+
+    ~Course(){
+        courseDisciplines.ForEach(x=>{
+            x.Course = null;
+        });
+    }
 }
