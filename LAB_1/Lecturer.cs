@@ -64,5 +64,11 @@ class Lecturer : Person, IEntity
             Console.WriteLine("Данная дисцпилина не прикрреплена");
         }
     }
+
+    ~Lecturer(){
+        disciplines.ForEach(x=>{
+            x.Lecturer = null;
+        });
+    }
 }
 
