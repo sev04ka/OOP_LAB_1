@@ -1,3 +1,5 @@
+namespace LAB_1;
+
 class LecturerDialog : AbstractDialog<Lecturer>
 {
     protected override string SearchCriteria(Lecturer item) => $"{item.Name}{item.Patronymic}{item.Lastname}{item.Age}{item.AcademicTitle}";
