@@ -8,6 +8,8 @@ class Discipline : IEntity
 
     public Lecturer? Lecturer { get; set; } = null;
 
+    public List<Course> courses = new List<Course>();
+
     public Discipline(string name, string description)
     {
         this.Name = name;
@@ -35,6 +37,17 @@ class Discipline : IEntity
         if (this.Lecturer != null)
         {
             Lecturer.disciplines.Remove(this);
+        }
+
+        if (courses != null)
+        {
+            foreach (Course course in courses)
+            {
+                if (course.courseDisciplines.Contains(this))
+                {
+                    course.courseDisciplines.Remove(this);
+                }
+            }
         }
     }
 }
