@@ -1,4 +1,6 @@
-﻿Console.InputEncoding = System.Text.Encoding.Unicode;
+using LAB_1;
+
+Console.InputEncoding = System.Text.Encoding.Unicode;
 
 GlobalStorage.InitStorage();
 while (true)
