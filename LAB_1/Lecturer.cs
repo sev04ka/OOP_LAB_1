@@ -1,3 +1,5 @@
+namespace LAB_1;
+
 class Lecturer : Person, IEntity
 {
     public string AcademicTitle { get; set; }
