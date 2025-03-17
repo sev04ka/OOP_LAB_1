@@ -1,3 +1,5 @@
+namespace LAB_1;
+
 class Student : Person, IEntity
 {
     public int GroupNumber { get; set; }
