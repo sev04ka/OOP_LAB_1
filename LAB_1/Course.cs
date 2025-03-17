@@ -52,7 +52,7 @@ class Course : IEntity
 
     ~Course(){
         courseDisciplines.ForEach(x=>{
-            x.Course = null;
+            x.course = null;
         });
     }
 }
