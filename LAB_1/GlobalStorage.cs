@@ -1,3 +1,5 @@
+namespace LAB_1;
+
 static public class GlobalStorage
 {
     private static List<Student> studentList = new List<Student>();
