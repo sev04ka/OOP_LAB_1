@@ -1,3 +1,5 @@
+namespace LAB_1;
+
 class StudentDialog : AbstractDialog<Student>
 {
     protected override string SearchCriteria(Student item) => $@"{item.Name}{item.Patronymic}{item.Lastname}{item.Age}{item.GroupNumber}{item.Course.CourseNumber}";
