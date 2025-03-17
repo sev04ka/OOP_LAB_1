@@ -1,3 +1,5 @@
+namespace LAB_1;
+
 class DisciplineDialog : AbstractDialog<Discipline>
 {
     protected override string SearchCriteria(Discipline item) => $"{item.Name}{item.Description}";
